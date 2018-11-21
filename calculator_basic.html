@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title>BASIC CALCULATOR </title>
+	<style>
+
+    .huh{
+		height: 200px;
+        width: 50%;
+        background-color: powderblue;
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+
+	.inputBox{
+		height: 50px;
+        width: 20%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+
+
+	}
+	.button{
+		font-weight: bold;
+		color: red;
+		}
+
+	.selector{
+		font-weight: bold;
+		font-size: 25px;
+		color: blue;
+
+	}
+	.value{
+		font-weight: bold;
+		color: green;
+	}
+
+	.result{
+		font-weight: bold;
+		font-size: 150px;
+		color: green;
+
+	}
+	</style>
+	</head>
+
+	<body class="huh">
+	<form> <div class="value">
+	Value 1:<input type="text" class="inputBox"   id="value1">
+	Value 2:<input type="text" class="inputBox" id="value2">
+
+</div>
+	<select id="operator" class="selector inputBox">
+	<option value="add">Add</option>
+	<option value="min">Minus</option>
+	<option value="div">Divide</option>
+	<option value="mul">Multiply</option>
+	</select>
+
+
+	<button class="button inputBox" type="button" onclick="calc()">
+	CALCULATE
+	</button>
+
+	</form>
+
+	<h1> <div id="result" class="result" > </div></h1>
+    <h5> This is a very basic calculator designed just to illustrate the way how concept of Functions work in Javascript.</h5>
+	<h5> ©rkpawan321</h5>
+<script src="main.js">  </script>
+
+</body>
+
+	</html>
